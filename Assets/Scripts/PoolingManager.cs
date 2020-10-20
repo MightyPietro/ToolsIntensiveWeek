@@ -1,37 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 namespace Gameplay
 {
     public class PoolingManager : MonoBehaviour
     {
-        public ShootCaller shootCaller;
+        [SerializeField] private List<Pools> pools;
 
-        [SerializeField] private Transform normalPool;
-        private void OnEnable() => shootCaller.poolingManager = this;
-        public void WakeInPool(ShootBehavior shoot)
+        private void Start()
         {
-            switch (shoot.projectileType)
-            {
-                case ShootBehavior.ProjectileType.normal:
-                    WakeAndPositionnate(normalPool, shoot.positionShootStart.position);
-                    break;
-            }
+            InstantiatePool();
         }
 
-        private void WakeAndPositionnate(Transform pool,Vector2 position)
+        public void InstantiatePool()
         {
-            for (int i = 0; i < pool.childCount; i++)
+            for (int i = 0; i < pools.Count; i++)
             {
-                if (!pool.GetChild(i).gameObject.activeSelf)
-                {
-                    pool.GetChild(i).gameObject.SetActive(true);
-                    pool.GetChild(i).position = position;
-                    break;
-                }
+                pools[i].poolableInScene = Instantiate(pools[i].poolPrefab);
+                SceneManager.MoveGameObjectToScene(pools[i].poolableInScene.gameObject, SceneManager.GetSceneByBuildIndex(1));
             }
+
         }
+
     }
 }
-

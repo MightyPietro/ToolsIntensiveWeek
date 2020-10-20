@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MILANAQuentin_Managers.unity
+    guid: 493c8428bd02dfb428e1586c03500aa2
+  - enabled: 1
+    path: Assets/Scenes/MILANAQuentin_MainScene.unity
+    guid: 4c94fcbc8fbf07f478e593eff545b54c
   m_configObjects: {}

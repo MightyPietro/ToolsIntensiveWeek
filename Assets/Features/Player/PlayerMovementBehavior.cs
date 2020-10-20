@@ -8,8 +8,9 @@ namespace Gameplay
     {
         [SerializeField] private GameEvent _OnPlayerMove;
         [SerializeField] private Transform _transform;
-        [SerializeField] private Camera cam;
+        private Camera cam;
 
+        private void OnEnable() => cam = Camera.main;
         private void Update() => Move();
         public void Move()
         {
