@@ -12,9 +12,12 @@ GameObject:
   - component: {fileID: 1373948356822926846}
   - component: {fileID: 1373948356822926847}
   - component: {fileID: 426514435}
+  - component: {fileID: 206947293}
+  - component: {fileID: 206947292}
+  - component: {fileID: 206947294}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _OnPlayerMove: {fileID: 11400000, guid: 911da80f25722d84f80795a1a0aa8151, type: 2}
   _transform: {fileID: 1373948356822926832}
+  gameSpeed: {fileID: 11400000, guid: 63aaef52352c74047979703ebc7a4e91, type: 2}
 --- !u!114 &426514435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,4 +134,79 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   positionShootStart: {fileID: 1373948356822926832}
+  gameSpeed: {fileID: 11400000, guid: 63aaef52352c74047979703ebc7a4e91, type: 2}
   projectilePool: {fileID: 11400000, guid: 2fcc679f1eb91474baf813612ce36fee, type: 2}
+--- !u!50 &206947293
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373948356822926845}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &206947292
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373948356822926845}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
+--- !u!114 &206947294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373948356822926845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0734f8007670c24b9cbe08cab2da4f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _OnDie:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1373948356822926845}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

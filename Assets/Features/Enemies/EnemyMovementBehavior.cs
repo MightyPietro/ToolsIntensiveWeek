@@ -7,9 +7,10 @@ namespace Gameplay
     public class EnemyMovementBehavior : MonoBehaviour
     {
         [SerializeField] private Rigidbody2D rb;
+        [SerializeField] private IntVariable gameSpeed;
         private void OnEnable()
         { 
-            rb.AddForce(-transform.right * 100);
+            //rb.AddForce(-transform.right * 100 * gameSpeed.Value);
             StartCoroutine(WaitToUnactive());
         
         }

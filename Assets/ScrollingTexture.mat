@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_TextureDisplacement
+  m_Name: ScrollingTexture
   m_Shader: {fileID: 4800000, guid: b677c834d4febb541a56a47b13a33e79, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -67,8 +67,8 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _ScrollXSpeed: -0.1
-    - _ScrollYSpeed: 0
+    - _ScrollXSpeed: 6.4
+    - _ScrollYSpeed: 4.1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1

@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private UnityEngine.Events.UnityEvent _OnReset;
+    private void OnEnable() => _OnReset.Invoke();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

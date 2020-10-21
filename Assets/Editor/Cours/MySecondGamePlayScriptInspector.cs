@@ -19,6 +19,10 @@ public class MySecondGamePlayScriptInspector : Editor
         redLevel = myColorProperty.FindPropertyRelative("r");
         myStrings = serializedObject.FindProperty("myArray");
         myStruct = serializedObject.FindProperty("myStruct");
+
+        //serializedProperty = serializedObject.FindProperty("Blabla");
+        //serializedProperty.Next();
+
     }
     public override void OnInspectorGUI()
     {
@@ -38,6 +42,8 @@ public class MySecondGamePlayScriptInspector : Editor
                 EditorGUILayout.PropertyField(myStrings.GetArrayElementAtIndex(i), new GUIContent("String","Tooltip"));
             }
         }
+
+
 
         EditorGUILayout.PropertyField(myStruct);
         serializedObject.ApplyModifiedProperties();

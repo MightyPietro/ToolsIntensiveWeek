@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a81729ef6d2ab0a40b9fa4ccfe939196, type: 3}
-  m_Name: Score
+  m_Script: {fileID: 11500000, guid: f6b740099274cd54a9d8cb6e7af19dae, type: 3}
+  m_Name: PoolEnemiesProjectiles
   m_EditorClassIdentifier: 
-  Value: 13700
-  Event: {fileID: 11400000, guid: b52f06a5f0d8e77469ba168f29dfb1d1, type: 2}
+  poolPrefab: {fileID: 8676604001845949371, guid: 5e2c95d1bdb39364aa29f45afc32425a, type: 3}
+  poolableInScene: {fileID: 0}

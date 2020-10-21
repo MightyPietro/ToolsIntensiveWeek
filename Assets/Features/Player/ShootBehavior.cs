@@ -11,8 +11,10 @@ namespace Gameplay
         [SerializeField] private UnityEngine.Events.UnityEvent _OnMouseClick;
         [SerializeField] private UnityEngine.Events.UnityEvent _OnEnemyShoot;
         [SerializeField] private Transform positionShootStart;
+        [SerializeField] IntVariable gameSpeed;
         public Pools projectilePool;
 
+        private void OnEnable() => isWaiting = false;
         private void Update()
         {
             if (isPlayer)
@@ -29,7 +31,7 @@ namespace Gameplay
         IEnumerator WaitToShoot()
         {
             isWaiting = true;
-            yield return new WaitForSeconds(Random.Range(0.5f, 3f));
+            yield return new WaitForSeconds(Random.Range(0.5f, 3f / gameSpeed.Value));
             _OnEnemyShoot.Invoke();
             isWaiting = false;
         }
