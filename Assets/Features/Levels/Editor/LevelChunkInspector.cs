@@ -12,6 +12,7 @@ namespace Gameplay
         SerializedProperty colorList;
         SerializedProperty selectedColor;
         SerializedProperty rectList;
+        SerializedProperty presetValues;
         int k;
         LevelChunk levelChunk;
 
@@ -23,6 +24,7 @@ namespace Gameplay
             colorList = serializedObject.FindProperty(nameof(levelChunk.colorList));
             selectedColor = serializedObject.FindProperty(nameof(levelChunk.selectedColor));
             rectList = serializedObject.FindProperty(nameof(levelChunk.rectList));
+            presetValues = serializedObject.FindProperty(nameof(levelChunk.presetValues));
 
 
         }
@@ -31,34 +33,36 @@ namespace Gameplay
         public override void OnInspectorGUI()
         {
             serializedObject.Update();
-            
+
             EditorGUILayout.PropertyField(filledChunk);
             //EditorGUILayout.PropertyField(colorList);
             //EditorGUILayout.PropertyField(selectedColor);
             //EditorGUILayout.PropertyField(rectList);
-            GUILayout.Space(EditorGUIUtility.singleLineHeight * 60);
-            Rect backgroundRect = new Rect(5 , 295, EditorGUIUtility.currentViewWidth * 0.92f, EditorGUIUtility.currentViewWidth * 0.6f );
+            //EditorGUILayout.PropertyField(presetValues);
+
+             float viewWidth = EditorGUIUtility.currentViewWidth;
+        GUILayout.Space(EditorGUIUtility.singleLineHeight * 150);
+            Rect createRect = new Rect(20, 100, viewWidth * .92f, 40);
+            EditorGUI.DrawRect(createRect, Color.black);
+            EditorGUI.LabelField(new Rect(createRect.x + (viewWidth * .92f *.5f), createRect.y,createRect.width,createRect.height), " Create " );
+
+            Rect backgroundRect = new Rect(5 , 295, viewWidth * 0.92f, viewWidth * 0.6f );
             EditorGUI.DrawRect(backgroundRect, new Color(levelChunk.selectedColor.r, levelChunk.selectedColor.g, levelChunk.selectedColor.b, .2f));
 
-            Rect obstaclesRect = new Rect(20, 150, EditorGUIUtility.currentViewWidth / 4, 50);
+            Rect obstaclesRect = new Rect(20, 150, viewWidth / 4, 50);
             EditorGUI.DrawRect(obstaclesRect, Color.yellow);
-            Rect enemiesRect = new Rect(25+ EditorGUIUtility.currentViewWidth / 4, 150, EditorGUIUtility.currentViewWidth / 4, 50);
+            Rect enemiesRect = new Rect(25+ viewWidth / 4, 150, viewWidth / 4, 50);
             EditorGUI.DrawRect(enemiesRect, Color.red);
             k =-1 ;
             levelChunk.rectList.Clear();
             for (int i = 0; i < 15; i++)
             {
-                k++;
-                Rect newRect = new Rect(20 + ((EditorGUIUtility.currentViewWidth / 20 + 5) * i), 300, EditorGUIUtility.currentViewWidth / 20, EditorGUIUtility.currentViewWidth / 20);
-                levelChunk.rectList.Add(newRect);
-                EditorGUI.DrawRect(levelChunk.rectList[k], levelChunk.colorList[k]);
-                
                 for (int j = 0; j < 9; j++)
                 {
                     k++;
-                    Rect jRect = new Rect(20 + ((EditorGUIUtility.currentViewWidth / 20 + 5) * i), 300 + (EditorGUIUtility.currentViewWidth / 20 + 5) * j, EditorGUIUtility.currentViewWidth / 20, EditorGUIUtility.currentViewWidth / 20);
-                    levelChunk.rectList.Add(jRect);
-                    EditorGUI.DrawRect(levelChunk.rectList[k], levelChunk.colorList[k]);
+                    Rect jRect = new Rect(20 + ((viewWidth / 20 + 5) * i), 300 + (viewWidth / 20 + 5) * j, viewWidth / 20, viewWidth / 20);
+                    levelChunk.rectList.Insert(k, jRect);
+                    EditorGUI.DrawRect(jRect, levelChunk.colorList[k]);
 
                 }
             }
@@ -67,6 +71,11 @@ namespace Gameplay
 
             for (int i = 0; i < levelChunk.rectList.Count; i++)
             {
+                
+
+
+
+
                 if (levelChunk.rectList[i].Contains(cur.mousePosition))
                 {
 
@@ -74,7 +83,9 @@ namespace Gameplay
                     if (cur.button == 0 && cur.isMouse)
                     {
                         levelChunk.colorList[i] = levelChunk.selectedColor;
+                        levelChunk.presetValues[i] = levelChunk.selectedValue;
                         EditorGUI.DrawRect(levelChunk.rectList[i], levelChunk.selectedColor);
+                        
 
                     }
                     else
@@ -83,26 +94,42 @@ namespace Gameplay
                     }
 
                 }
+                else if (createRect.Contains(cur.mousePosition))
+                {
+
+                    if (cur.type == EventType.MouseDown)
+                    {
+                        levelChunk.Create();
+                    }
+                    else
+                    {
+                        EditorGUI.DrawRect(createRect, Color.grey);
+                    }
+
+                }
                 else if (obstaclesRect.Contains(cur.mousePosition))
                 {
-                    if (cur.button == 0 && cur.isMouse)
+                    if (cur.type == EventType.MouseDown)
                     {
                         levelChunk.selectedColor = Color.yellow;
+                        levelChunk.selectedValue = 1;
                     }
 
                 }
                 else if (enemiesRect.Contains(cur.mousePosition))
                 {
-                    if (cur.button == 0 && cur.isMouse)
+                    if (cur.type == EventType.MouseDown)
                     {
                         levelChunk.selectedColor = Color.red;
+                        levelChunk.selectedValue = 2;
                     }
 
                 }
             }
 
-            
-            
+            if (cur.type == EventType.MouseUp) levelChunk.isMouseDown = false;
+
+           
             Repaint();
 
             serializedObject.ApplyModifiedProperties();

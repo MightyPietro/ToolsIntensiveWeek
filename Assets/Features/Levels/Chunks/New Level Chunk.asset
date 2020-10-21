@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7d751108078174ba4ce3df0a927810, type: 3}
   m_Name: New Level Chunk
   m_EditorClassIdentifier: 
-  filledChunk: {fileID: 0}
+  filledChunk: {fileID: 39612491866469609, guid: adb0bf806dd3df847b3820fbf94436da, type: 3}
   colorList:
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -21,21 +22,35 @@ MonoBehaviour:
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -43,16 +58,26 @@ MonoBehaviour:
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -60,15 +85,35 @@ MonoBehaviour:
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -76,6 +121,8 @@ MonoBehaviour:
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -83,836 +130,702 @@ MonoBehaviour:
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   rectList:
   - serializedVersion: 2
     x: 20
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
     x: 20
-    y: 300
-    width: 30.6
-    height: 30.6
+    y: 327.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
     x: 20
-    y: 335.6
-    width: 30.6
-    height: 30.6
+    y: 355.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
     x: 20
-    y: 371.2
-    width: 30.6
-    height: 30.6
+    y: 383.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
     x: 20
-    y: 406.8
-    width: 30.6
-    height: 30.6
+    y: 411
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
     x: 20
-    y: 442.4
-    width: 30.6
-    height: 30.6
+    y: 438.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
     x: 20
-    y: 478
-    width: 30.6
-    height: 30.6
+    y: 466.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
     x: 20
-    y: 513.6
-    width: 30.6
-    height: 30.6
+    y: 494.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
     x: 20
-    y: 549.2
-    width: 30.6
-    height: 30.6
+    y: 522
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 20
-    y: 584.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 55.6
+    x: 47.75
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 55.6
+    x: 47.75
+    y: 327.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 47.75
+    y: 355.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 47.75
+    y: 383.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 47.75
+    y: 411
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 47.75
+    y: 438.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 47.75
+    y: 466.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 47.75
+    y: 494.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 47.75
+    y: 522
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 75.5
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 55.6
-    y: 335.6
-    width: 30.6
-    height: 30.6
+    x: 75.5
+    y: 327.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 55.6
-    y: 371.2
-    width: 30.6
-    height: 30.6
+    x: 75.5
+    y: 355.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 55.6
-    y: 406.8
-    width: 30.6
-    height: 30.6
+    x: 75.5
+    y: 383.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 55.6
-    y: 442.4
-    width: 30.6
-    height: 30.6
+    x: 75.5
+    y: 411
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 55.6
-    y: 478
-    width: 30.6
-    height: 30.6
+    x: 75.5
+    y: 438.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 55.6
-    y: 513.6
-    width: 30.6
-    height: 30.6
+    x: 75.5
+    y: 466.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 55.6
-    y: 549.2
-    width: 30.6
-    height: 30.6
+    x: 75.5
+    y: 494.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 55.6
-    y: 584.8
-    width: 30.6
-    height: 30.6
+    x: 75.5
+    y: 522
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 91.2
+    x: 103.25
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 91.2
+    x: 103.25
+    y: 327.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 103.25
+    y: 355.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 103.25
+    y: 383.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 103.25
+    y: 411
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 103.25
+    y: 438.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 103.25
+    y: 466.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 103.25
+    y: 494.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 103.25
+    y: 522
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 131
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 91.2
-    y: 335.6
-    width: 30.6
-    height: 30.6
+    x: 131
+    y: 327.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 91.2
-    y: 371.2
-    width: 30.6
-    height: 30.6
+    x: 131
+    y: 355.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 91.2
-    y: 406.8
-    width: 30.6
-    height: 30.6
+    x: 131
+    y: 383.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 91.2
-    y: 442.4
-    width: 30.6
-    height: 30.6
+    x: 131
+    y: 411
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 91.2
-    y: 478
-    width: 30.6
-    height: 30.6
+    x: 131
+    y: 438.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 91.2
-    y: 513.6
-    width: 30.6
-    height: 30.6
+    x: 131
+    y: 466.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 91.2
-    y: 549.2
-    width: 30.6
-    height: 30.6
+    x: 131
+    y: 494.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 91.2
-    y: 584.8
-    width: 30.6
-    height: 30.6
+    x: 131
+    y: 522
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 126.8
+    x: 158.75
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 126.8
+    x: 158.75
+    y: 327.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 158.75
+    y: 355.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 158.75
+    y: 383.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 158.75
+    y: 411
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 158.75
+    y: 438.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 158.75
+    y: 466.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 158.75
+    y: 494.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 158.75
+    y: 522
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 186.5
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 126.8
-    y: 335.6
-    width: 30.6
-    height: 30.6
+    x: 186.5
+    y: 327.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 126.8
-    y: 371.2
-    width: 30.6
-    height: 30.6
+    x: 186.5
+    y: 355.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 126.8
-    y: 406.8
-    width: 30.6
-    height: 30.6
+    x: 186.5
+    y: 383.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 126.8
-    y: 442.4
-    width: 30.6
-    height: 30.6
+    x: 186.5
+    y: 411
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 126.8
-    y: 478
-    width: 30.6
-    height: 30.6
+    x: 186.5
+    y: 438.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 126.8
-    y: 513.6
-    width: 30.6
-    height: 30.6
+    x: 186.5
+    y: 466.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 126.8
-    y: 549.2
-    width: 30.6
-    height: 30.6
+    x: 186.5
+    y: 494.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 126.8
-    y: 584.8
-    width: 30.6
-    height: 30.6
+    x: 186.5
+    y: 522
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 162.4
+    x: 214.25
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 162.4
+    x: 214.25
+    y: 327.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 214.25
+    y: 355.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 214.25
+    y: 383.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 214.25
+    y: 411
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 214.25
+    y: 438.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 214.25
+    y: 466.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 214.25
+    y: 494.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 214.25
+    y: 522
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 242
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 162.4
-    y: 335.6
-    width: 30.6
-    height: 30.6
+    x: 242
+    y: 327.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 162.4
-    y: 371.2
-    width: 30.6
-    height: 30.6
+    x: 242
+    y: 355.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 162.4
-    y: 406.8
-    width: 30.6
-    height: 30.6
+    x: 242
+    y: 383.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 162.4
-    y: 442.4
-    width: 30.6
-    height: 30.6
+    x: 242
+    y: 411
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 162.4
-    y: 478
-    width: 30.6
-    height: 30.6
+    x: 242
+    y: 438.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 162.4
-    y: 513.6
-    width: 30.6
-    height: 30.6
+    x: 242
+    y: 466.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 162.4
-    y: 549.2
-    width: 30.6
-    height: 30.6
+    x: 242
+    y: 494.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 162.4
-    y: 584.8
-    width: 30.6
-    height: 30.6
+    x: 242
+    y: 522
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 198
+    x: 269.75
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 198
+    x: 269.75
+    y: 327.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 269.75
+    y: 355.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 269.75
+    y: 383.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 269.75
+    y: 411
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 269.75
+    y: 438.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 269.75
+    y: 466.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 269.75
+    y: 494.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 269.75
+    y: 522
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 297.5
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 198
-    y: 335.6
-    width: 30.6
-    height: 30.6
+    x: 297.5
+    y: 327.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 198
-    y: 371.2
-    width: 30.6
-    height: 30.6
+    x: 297.5
+    y: 355.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 198
-    y: 406.8
-    width: 30.6
-    height: 30.6
+    x: 297.5
+    y: 383.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 198
-    y: 442.4
-    width: 30.6
-    height: 30.6
+    x: 297.5
+    y: 411
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 198
-    y: 478
-    width: 30.6
-    height: 30.6
+    x: 297.5
+    y: 438.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 198
-    y: 513.6
-    width: 30.6
-    height: 30.6
+    x: 297.5
+    y: 466.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 198
-    y: 549.2
-    width: 30.6
-    height: 30.6
+    x: 297.5
+    y: 494.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 198
-    y: 584.8
-    width: 30.6
-    height: 30.6
+    x: 297.5
+    y: 522
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 233.6
+    x: 325.25
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 233.6
+    x: 325.25
+    y: 327.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 325.25
+    y: 355.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 325.25
+    y: 383.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 325.25
+    y: 411
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 325.25
+    y: 438.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 325.25
+    y: 466.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 325.25
+    y: 494.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 325.25
+    y: 522
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 353
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 233.6
-    y: 335.6
-    width: 30.6
-    height: 30.6
+    x: 353
+    y: 327.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 233.6
-    y: 371.2
-    width: 30.6
-    height: 30.6
+    x: 353
+    y: 355.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 233.6
-    y: 406.8
-    width: 30.6
-    height: 30.6
+    x: 353
+    y: 383.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 233.6
-    y: 442.4
-    width: 30.6
-    height: 30.6
+    x: 353
+    y: 411
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 233.6
-    y: 478
-    width: 30.6
-    height: 30.6
+    x: 353
+    y: 438.75
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 233.6
-    y: 513.6
-    width: 30.6
-    height: 30.6
+    x: 353
+    y: 466.5
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 233.6
-    y: 549.2
-    width: 30.6
-    height: 30.6
+    x: 353
+    y: 494.25
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 233.6
-    y: 584.8
-    width: 30.6
-    height: 30.6
+    x: 353
+    y: 522
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 269.2
+    x: 380.75
     y: 300
-    width: 30.6
-    height: 30.6
+    width: 22.75
+    height: 22.75
   - serializedVersion: 2
-    x: 269.2
+    x: 380.75
+    y: 327.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 380.75
+    y: 355.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 380.75
+    y: 383.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 380.75
+    y: 411
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 380.75
+    y: 438.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 380.75
+    y: 466.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 380.75
+    y: 494.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 380.75
+    y: 522
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 408.5
     y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 269.2
-    y: 335.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 269.2
-    y: 371.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 269.2
-    y: 406.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 269.2
-    y: 442.4
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 269.2
-    y: 478
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 269.2
-    y: 513.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 269.2
-    y: 549.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 269.2
-    y: 584.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 304.8
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 304.8
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 304.8
-    y: 335.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 304.8
-    y: 371.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 304.8
-    y: 406.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 304.8
-    y: 442.4
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 304.8
-    y: 478
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 304.8
-    y: 513.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 304.8
-    y: 549.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 304.8
-    y: 584.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 340.4
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 340.4
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 340.4
-    y: 335.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 340.4
-    y: 371.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 340.4
-    y: 406.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 340.4
-    y: 442.4
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 340.4
-    y: 478
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 340.4
-    y: 513.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 340.4
-    y: 549.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 340.4
-    y: 584.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 376
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 376
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 376
-    y: 335.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 376
-    y: 371.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 376
-    y: 406.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 376
-    y: 442.4
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 376
-    y: 478
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 376
-    y: 513.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 376
-    y: 549.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 376
-    y: 584.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 411.6
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 411.6
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 411.6
-    y: 335.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 411.6
-    y: 371.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 411.6
-    y: 406.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 411.6
-    y: 442.4
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 411.6
-    y: 478
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 411.6
-    y: 513.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 411.6
-    y: 549.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 411.6
-    y: 584.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 447.2
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 447.2
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 447.2
-    y: 335.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 447.2
-    y: 371.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 447.2
-    y: 406.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 447.2
-    y: 442.4
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 447.2
-    y: 478
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 447.2
-    y: 513.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 447.2
-    y: 549.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 447.2
-    y: 584.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 482.8
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 482.8
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 482.8
-    y: 335.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 482.8
-    y: 371.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 482.8
-    y: 406.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 482.8
-    y: 442.4
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 482.8
-    y: 478
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 482.8
-    y: 513.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 482.8
-    y: 549.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 482.8
-    y: 584.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 518.4
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 518.4
-    y: 300
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 518.4
-    y: 335.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 518.4
-    y: 371.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 518.4
-    y: 406.8
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 518.4
-    y: 442.4
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 518.4
-    y: 478
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 518.4
-    y: 513.6
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 518.4
-    y: 549.2
-    width: 30.6
-    height: 30.6
-  - serializedVersion: 2
-    x: 518.4
-    y: 584.8
-    width: 30.6
-    height: 30.6
-  selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 408.5
+    y: 327.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 408.5
+    y: 355.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 408.5
+    y: 383.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 408.5
+    y: 411
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 408.5
+    y: 438.75
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 408.5
+    y: 466.5
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 408.5
+    y: 494.25
+    width: 22.75
+    height: 22.75
+  - serializedVersion: 2
+    x: 408.5
+    y: 522
+    width: 22.75
+    height: 22.75
+  selectedColor: {r: 1, g: 0, b: 0, a: 1}
+  presetValues: 020000000100000001000000010000000100000001000000010000000100000002000000020000000200000002000000010000000100000001000000010000000100000002000000020000000200000002000000010000000100000001000000010000000100000002000000020000000200000002000000010000000100000001000000010000000100000002000000020000000100000001000000010000000100000001000000010000000100000002000000020000000100000001000000010000000100000001000000020000000200000002000000020000000100000001000000010000000100000001000000020000000200000002000000020000000100000001000000010000000100000001000000010000000100000002000000020000000200000002000000020000000200000001000000010000000100000002000000020000000200000002000000020000000200000001000000010000000100000002000000020000000200000002000000020000000200000001000000010000000100000002000000020000000100000001000000010000000100000001000000010000000100000002000000020000000100000001000000010000000100000001000000010000000100000002000000020000000100000001000000010000000100000001000000020000000200000002000000020000000100000001000000010000000100000001000000020000000200000002000000
+  isMouseDown: 0
+  selectedValue: 2

@@ -11,7 +11,22 @@ namespace Gameplay
         public List<Color> colorList;
         public List<Rect> rectList;
         public Color selectedColor;
+        public List<int> presetValues;
+        public bool isMouseDown;
+        public int selectedValue;
+        
+        public void Create()
+        {
+            
+            if (!isMouseDown)
+            {
+                Debug.Log(filledChunk.transform.childCount);
+                
+                
+                isMouseDown = true;
+            }
 
+        }
     }
 }
 
