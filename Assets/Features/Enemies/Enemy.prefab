@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 1121687071418513616}
   - component: {fileID: -6126571279790334469}
   - component: {fileID: 4877026110578675634}
-  - component: {fileID: -5209306843568760904}
+  - component: {fileID: 5091561954209678428}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -113,7 +113,7 @@ Transform:
   m_GameObject: {fileID: 7238095710413629714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.51, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1103472912113804542}
   m_Father: {fileID: 0}
@@ -159,8 +159,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a8166ea434d337349818825bff42d2f6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -182,8 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 425a3da7bc12f754b9d6c767c3a595b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: -6126571279790334469}
   gameSpeed: {fileID: 11400000, guid: 63aaef52352c74047979703ebc7a4e91, type: 2}
+  _transform: {fileID: 7238095710413629727}
 --- !u!114 &1121687071418513616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7238095710413629714}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e68f57fbdfc6c744855589279f05b98, type: 3}
   m_Name: 
@@ -278,7 +278,7 @@ MonoBehaviour:
   positionShootStart: {fileID: 1103472912113804542}
   gameSpeed: {fileID: 11400000, guid: 63aaef52352c74047979703ebc7a4e91, type: 2}
   projectilePool: {fileID: 11400000, guid: 8bfad71e2efa8cf4cb6cf1fd0c998bee, type: 2}
---- !u!61 &-5209306843568760904
+--- !u!61 &5091561954209678428
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,14 +293,14 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 2.3, y: 1.6}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.3, y: 1.6}
   m_EdgeRadius: 0

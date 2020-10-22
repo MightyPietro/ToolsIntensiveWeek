@@ -9,8 +9,14 @@ namespace Gameplay
         [SerializeField] private UnityEngine.Events.UnityEvent _OnDie;
         void IKillable.Die()
         {
+            transform.position = new Vector2(0, 248);
             _OnDie.Invoke();
             
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Obstacles")) _OnDie.Invoke();
         }
     }
 }

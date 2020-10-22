@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 85a979f05d2eb644786318c961098d52
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fakedLevelChunk: {fileID: 11400000, guid: 64bbaa630cb10fc4abc1389a8a57fa01, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

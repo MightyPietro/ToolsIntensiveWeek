@@ -6,18 +6,22 @@ namespace Gameplay
 {
     public class EnemyMovementBehavior : MonoBehaviour
     {
-        [SerializeField] private Rigidbody2D rb;
         [SerializeField] private IntVariable gameSpeed;
+        [SerializeField] private Transform _transform;
         private void OnEnable()
         { 
-            //rb.AddForce(-transform.right * 100 * gameSpeed.Value);
-            StartCoroutine(WaitToUnactive());
+            
+            //StartCoroutine(WaitToUnactive());
         
         }
 
+        private void Update()
+        {
+            _transform.Translate(-Vector2.right * gameSpeed.Value * .01f);
+        }
         private IEnumerator WaitToUnactive()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(10);
             if (gameObject.activeSelf) gameObject.SetActive(false);
         }
     }

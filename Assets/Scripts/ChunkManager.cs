@@ -4,21 +4,38 @@ using UnityEngine;
 
 namespace Gameplay
 {
-    public class ChunkManager : MonoBehaviour
+    public class ChunkManager : Poolable
     {
         [SerializeField] LevelHolder levelHolder;
+        [SerializeField] Pools enemiesPool;
 
-        private void Start()
+        private IEnumerator Start()
         {
-            GameObject chunk = Instantiate(levelHolder.levelChunks[0].filledChunk) as GameObject;
-            for (int i = 0; i < levelHolder.levelChunks[0].presetValues.Count; i++)
+            yield return new WaitForSeconds(.1f);
+            for (int i = 0; i < levelHolder.levelChunks.Count; i++)
             {
-                if (levelHolder.levelChunks[0].presetValues[i] == 1)
+                GameObject chunk = Instantiate(levelHolder.levelChunks[i].filledChunk) as GameObject;
+                chunk.transform.position = Vector2.zero + (new Vector2(15, 0) * i);
+                for (int j = 0; j < levelHolder.levelChunks[i].presetValues.Count; j++)
                 {
-                    Debug.Log(chunk.transform.GetChild(i));
-                    chunk.transform.GetChild(i).gameObject.SetActive(false);
+                    switch (levelHolder.levelChunks[i].presetValues[j])
+                    {
+                        case 0:
+                            chunk.transform.GetChild(j).gameObject.SetActive(false);
+                            break;
+                        case 1:
+                            chunk.transform.GetChild(j).gameObject.SetActive(false);
+                            WakeAndPositionnate(enemiesPool, chunk.transform.GetChild(j).position);
+                            break;
+                        case 2:
+                            break;
+
+                    }
+
                 }
+
             }
+            
             
         }
     }
