@@ -5,9 +5,19 @@ using UnityEditor;
 namespace Gameplay
 {
     [CustomEditor(typeof(LevelHolder))]
-    public class LevelHolderInspector : MonoBehaviour
+    public class LevelHolderInspector : Editor
     {
-        
+        private LevelHolder levelHolder;
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+
+            if (GUILayout.Button("Open Window"))
+            {
+                levelHolder = target as LevelHolder;
+                levelHolder.OpenWindow();
+            }
+        }
     }
 }
 

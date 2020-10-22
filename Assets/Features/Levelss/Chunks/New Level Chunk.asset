@@ -9,19 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c7d751108078174ba4ce3df0a927810, type: 3}
+  m_Script: {fileID: 0}
   m_Name: New Level Chunk
   m_EditorClassIdentifier: 
-  filledChunk: {fileID: 0}
-  difficulty: 0
-  colorList: []
-  rectList: []
-  selectedColor: {r: 0, g: 0, b: 0, a: 0}
-  presetValues: 
-  isMouseDown: 0
-  selectedValue: 0
-  emptySprite: {fileID: 0}
-  obstacleSprite: {fileID: 0}
-  enemySprite: {fileID: 0}
-  selectedSprite: {fileID: 0}
-  spritesList: []

@@ -12,7 +12,7 @@ namespace Gameplay
         private IEnumerator Start()
         {
             yield return new WaitForSeconds(.1f);
-            for (int i = 0; i < levelHolder.levelChunks.Count; i++)
+            for (int i = 0; i < levelHolder.levelChunks.Length; i++)
             {
                 GameObject chunk = Instantiate(levelHolder.levelChunks[i].filledChunk) as GameObject;
                 chunk.transform.position = Vector2.zero + (new Vector2(15, 0) * i);

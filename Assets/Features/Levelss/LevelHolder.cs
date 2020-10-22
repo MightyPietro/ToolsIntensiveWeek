@@ -7,8 +7,8 @@ namespace Gameplay
     [CreateAssetMenu(menuName = "Levels/Holder")]
     public class LevelHolder : ScriptableObject
     {
-        public List<LevelChunk> levelChunks;
-        public List<int> gameSpeedValues;
+        public LevelChunk[] levelChunks;
+        public int[] gameSpeedValues;
         public int changedValue;
         public List<Keyframe> keysList = new List<Keyframe>();
 
@@ -19,6 +19,11 @@ namespace Gameplay
         public GUIStyle titleStyle;
         public GUIStyle chunkStyle;
         public GUIStyle gameSpeedStyle;
+
+        public void OpenWindow()
+        {
+            LevelHolderWindow.Init(this);
+        }
     }
 }
 
