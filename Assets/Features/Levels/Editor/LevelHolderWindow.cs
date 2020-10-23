@@ -54,8 +54,9 @@ namespace Gameplay
 
         private void OnGUI()
         {
-            
-            
+            Undo.RecordObject(levelHolder, "Undo Changes");
+
+
             if (levelHolder == null)
             {
                 levelHolder = EditorGUILayout.ObjectField(levelHolder, typeof(LevelHolder)) as LevelHolder;
@@ -169,9 +170,9 @@ namespace Gameplay
                 levelHolder.curve = EditorGUI.CurveField(curveRect, levelHolder.curve);
                 if (position.width < 971) position = new Rect(position.x, position.y, 971, position.height);
                 if (position.height < 970) position = new Rect(position.x, position.y, position.width, 970);
-              
 
 
+                
                 serializedObject.ApplyModifiedProperties();
             }
         }

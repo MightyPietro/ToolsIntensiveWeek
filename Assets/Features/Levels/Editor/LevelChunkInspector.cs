@@ -146,7 +146,7 @@ namespace Gameplay
 
             if (cur.type == EventType.MouseUp) levelChunk.isMouseDown = false;
 
-
+            
             Undo.RecordObject(levelChunk, "UnPaint");
 
             Repaint();

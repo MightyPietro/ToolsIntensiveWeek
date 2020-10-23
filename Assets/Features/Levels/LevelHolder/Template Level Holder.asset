@@ -17,7 +17,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 31bf471908586294eba648cf329b0080, type: 2}
   - {fileID: 11400000, guid: a031ed2839dda75449b0e9ace2485b41, type: 2}
   - {fileID: 11400000, guid: c04c1a3b44a1be54cb7c0db4c7528f4d, type: 2}
-  - {fileID: 11400000, guid: fd7b9a4fbc5ab314fbedc2cf2d46de53, type: 2}
+  - {fileID: 11400000, guid: c04c1a3b44a1be54cb7c0db4c7528f4d, type: 2}
+  - {fileID: 11400000, guid: 31bf471908586294eba648cf329b0080, type: 2}
+  - {fileID: 11400000, guid: 284f8833496b09743bda66168e8afd1b, type: 2}
+  - {fileID: 11400000, guid: 31bf471908586294eba648cf329b0080, type: 2}
+  - {fileID: 11400000, guid: c04c1a3b44a1be54cb7c0db4c7528f4d, type: 2}
+  - {fileID: 11400000, guid: a031ed2839dda75449b0e9ace2485b41, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -48,12 +53,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  gameSpeedValues: 01000000010000000300000002000000030000000300000001000000010000000300000001000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  gameSpeedValues: 01000000010000000300000002000000030000000300000001000000010000000300000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   keysValue:
   - 0
   - 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   - 0
   - 0
   changedValue: 0
-  fakedLevelChunk: {fileID: 11400000, guid: 64bbaa630cb10fc4abc1389a8a57fa01, type: 2}
+  fakedLevelChunk: {fileID: 0}
   curve:
     serializedVersion: 2
     m_Curve:
@@ -190,15 +190,6 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
