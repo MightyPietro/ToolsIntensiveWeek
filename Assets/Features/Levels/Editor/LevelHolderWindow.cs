@@ -126,6 +126,7 @@ namespace Gameplay
                     else if (i >= 14 && i < 21) { numberOfLine = 2;}
                     else if(i >= 21 && i < 28) { numberOfLine = 3; }
                     else if(i >= 28 && i < 35) { numberOfLine = 4; }
+                    else if(i >= 35 && i < 42) { numberOfLine = 5; }
 
                     switch (i)
                     {
@@ -141,10 +142,16 @@ namespace Gameplay
                         case 28:
                             j = 0;
                             break;
+                        case 35:
+                            j = 0;
+                            break;
+                        case 42:
+                            j = 0;
+                            break;
                     }
                     
 
-                    chunkRect = new Rect(10 + (j * position.width * .14f), 50 + (numberOfLine * 175), position.width * .1f, position.height * .1f);
+                    chunkRect = new Rect(10 + (j * position.width * .14f), 50 + (numberOfLine * 225), position.width * .1f, position.height * .1f);
                     
 
                     if (levelHolder.curve.keys[i].value < 1f / 8f) RectsPresets(chunkRect, Color.white, i, "Easy--", "Chunk : Easy", "GameSpeed : 1");
@@ -176,6 +183,7 @@ namespace Gameplay
             
             
             Rect titleRect = new Rect(rect.x, rect.y, rect.width, rect.height * .5f);
+            EditorGUI.LabelField(new Rect(titleRect.x, titleRect.y - titleRect.height * .5f, titleRect.width,titleRect.height), "Recommendations", levelHolder.titleStyle);
             EditorGUI.LabelField(titleRect, title, levelHolder.titleStyle);
             EditorGUI.LabelField(titleRect, chunkTitle, levelHolder.chunkStyle);
             EditorGUI.LabelField(titleRect, gameSpeedTitle, levelHolder.gameSpeedStyle);
@@ -184,7 +192,7 @@ namespace Gameplay
         
 
             Rect intRect = new Rect(rect.x, levelChunkRect.y + levelChunkRect.height, rect.width, rect.height * .22f);
-            levelHolder.gameSpeedValues[i] = EditorGUI.IntField(intRect, levelHolder.gameSpeedValues[i]);
+            levelHolder.gameSpeedValues[i] = EditorGUI.IntSlider(intRect, levelHolder.gameSpeedValues[i],1,3);
 
             Rect createRect = new Rect(rect.x, intRect.y + intRect.height, rect.width, rect.height * .22f);
             if (GUI.Button(createRect,"Create New Level Chunk"))
