@@ -17,6 +17,8 @@ namespace Gameplay
         int numberOfLine;
         int j;
         Rect chunkRect;
+        string assetName;
+        LevelHolder templateLevelHolder;
 
 
         public static void Init(LevelHolder holder)
@@ -30,7 +32,7 @@ namespace Gameplay
             window.chunksArray = window.serializedObject.FindProperty(nameof(window.levelHolder.levelChunks));
             window.curveProperty = window.serializedObject.FindProperty(nameof(window.levelHolder.curve));
             window.keysValueProperty = window.serializedObject.FindProperty(nameof(window.levelHolder.keysValue));
-
+            
 
             window.Show();
         }
@@ -39,7 +41,7 @@ namespace Gameplay
         public static void Init()
         {
             LevelHolderWindow window = EditorWindow.GetWindow(typeof(LevelHolderWindow)) as LevelHolderWindow;
-
+            window.templateLevelHolder = Resources.Load<LevelHolder>("LevelHolder");
 
             // Initialize window : start de la fenêtre
 
@@ -49,13 +51,38 @@ namespace Gameplay
         private void OnGUI()
         {
             
+            
             if (levelHolder == null)
             {
                 levelHolder = EditorGUILayout.ObjectField(levelHolder, typeof(LevelHolder)) as LevelHolder;
+                assetName = GUILayout.TextField(assetName);
+                if (assetName != "")
+                {
+                    if (GUILayout.Button("Create Level Holder Asset"))
+                    {
+
+                        LevelHolder newLevelHolder = new LevelHolder();
+                        newLevelHolder.gameSpeedValues = new int[40];
+                        newLevelHolder.levelChunks = new LevelChunk[40];
+                        newLevelHolder.keysValue = new float[40];
+                        newLevelHolder.curve = AnimationCurve.Linear(0, 0, 1, 1);
+                        newLevelHolder.titleStyle = templateLevelHolder.titleStyle;
+                        newLevelHolder.chunkStyle = templateLevelHolder.chunkStyle;
+                        newLevelHolder.gameSpeedStyle = templateLevelHolder.gameSpeedStyle;
+
+                        AssetDatabase.CreateAsset(newLevelHolder, "Assets/TestAssetCreation/" + assetName + ".asset");
+                        
+
+                        levelHolder = newLevelHolder;
+                    }
+
+                }
+
                 if (levelHolder != null)
                 {
                     
                     serializedObject = new SerializedObject(levelHolder);
+
                     chunksArray = serializedObject.FindProperty(nameof(levelHolder.levelChunks));
                     curveProperty = serializedObject.FindProperty(nameof(levelHolder.curve));
                     keysValueProperty = serializedObject.FindProperty(nameof(levelHolder.keysValue));
