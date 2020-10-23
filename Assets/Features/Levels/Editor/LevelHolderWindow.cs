@@ -19,6 +19,7 @@ namespace Gameplay
         Rect chunkRect;
         string assetName;
         LevelHolder templateLevelHolder;
+        LevelChunk templateLevelChunk;
 
 
         public static void Init(LevelHolder holder)
@@ -32,7 +33,9 @@ namespace Gameplay
             window.chunksArray = window.serializedObject.FindProperty(nameof(window.levelHolder.levelChunks));
             window.curveProperty = window.serializedObject.FindProperty(nameof(window.levelHolder.curve));
             window.keysValueProperty = window.serializedObject.FindProperty(nameof(window.levelHolder.keysValue));
-            
+            window.templateLevelChunk = Resources.Load<LevelChunk>("LevelChunk");
+
+
 
             window.Show();
         }
@@ -42,6 +45,7 @@ namespace Gameplay
         {
             LevelHolderWindow window = EditorWindow.GetWindow(typeof(LevelHolderWindow)) as LevelHolderWindow;
             window.templateLevelHolder = Resources.Load<LevelHolder>("LevelHolder");
+            window.templateLevelChunk = Resources.Load<LevelChunk>("LevelChunk");
 
             // Initialize window : start de la fenêtre
 
@@ -55,8 +59,12 @@ namespace Gameplay
             if (levelHolder == null)
             {
                 levelHolder = EditorGUILayout.ObjectField(levelHolder, typeof(LevelHolder)) as LevelHolder;
+                GUILayout.Space(40);
+
+                GUILayout.Label("Write a file name to create a Level Holder");
                 assetName = GUILayout.TextField(assetName);
-                if (assetName != "")
+                
+                if (assetName != null && assetName != "" )
                 {
                     if (GUILayout.Button("Create Level Holder Asset"))
                     {
@@ -70,13 +78,14 @@ namespace Gameplay
                         newLevelHolder.chunkStyle = templateLevelHolder.chunkStyle;
                         newLevelHolder.gameSpeedStyle = templateLevelHolder.gameSpeedStyle;
 
-                        AssetDatabase.CreateAsset(newLevelHolder, "Assets/TestAssetCreation/" + assetName + ".asset");
+                        AssetDatabase.CreateAsset(newLevelHolder, "Assets/Features/Levels/LevelHolder/" + assetName + ".asset");
                         
 
                         levelHolder = newLevelHolder;
                     }
 
                 }
+               
 
                 if (levelHolder != null)
                 {
@@ -91,6 +100,8 @@ namespace Gameplay
             }
             else
             {
+
+                levelHolder = EditorGUILayout.ObjectField(levelHolder, typeof(LevelHolder)) as LevelHolder;
                 serializedObject.Update();
                 chunksArray = serializedObject.FindProperty(nameof(levelHolder.levelChunks));
                 curveProperty = serializedObject.FindProperty(nameof(levelHolder.curve));
@@ -173,6 +184,26 @@ namespace Gameplay
 
             Rect intRect = new Rect(rect.x, levelChunkRect.y + levelChunkRect.height, rect.width, rect.height * .22f);
             levelHolder.gameSpeedValues[i] = EditorGUI.IntField(intRect, levelHolder.gameSpeedValues[i]);
+
+            Rect createRect = new Rect(rect.x, intRect.y + intRect.height, rect.width, rect.height * .22f);
+            if (GUI.Button(createRect,"Create New Level Chunk"))
+            {
+                Debug.Log("Hello");
+                LevelChunk newLevelChunk = new LevelChunk();
+                newLevelChunk.colorList = new List<Color>(135);
+                newLevelChunk.rectList = new List<Rect>(135);
+                newLevelChunk.presetValues = new List<int>(135);
+                newLevelChunk.spritesList = new List<Sprite>(135);
+                for (int j = 0; j < newLevelChunk.spritesList.Count; j++)
+                {
+                    newLevelChunk.spritesList[j] = Resources.Load<Sprite>("EmptySprite");
+                }
+                newLevelChunk.emptySprite = default;
+                newLevelChunk.enemySprite = Resources.Load<Sprite>("EnemySprite");
+                newLevelChunk.obstacleSprite = Resources.Load<Sprite>("ObstacleSprite");
+                AssetDatabase.CreateAsset(newLevelChunk, "Assets/Features/Levels/Chunks/Level Chunk" + Random.Range(0,100000) +".asset");
+                levelHolder.levelChunks[i] = EditorGUI.ObjectField(levelChunkRect, newLevelChunk, typeof(LevelChunk)) as LevelChunk;
+            }
             Repaint();
             EditorUtility.SetDirty(levelHolder);
             
