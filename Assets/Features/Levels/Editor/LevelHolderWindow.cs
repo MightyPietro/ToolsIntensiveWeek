@@ -79,7 +79,8 @@ namespace Gameplay
                         newLevelHolder.gameSpeedStyle = templateLevelHolder.gameSpeedStyle;
 
                         AssetDatabase.CreateAsset(newLevelHolder, "Assets/Features/Levels/LevelHolder/" + assetName + ".asset");
-                        
+                        AssetDatabase.SaveAssets();
+                        AssetDatabase.Refresh();
 
                         levelHolder = newLevelHolder;
                     }
@@ -190,18 +191,32 @@ namespace Gameplay
             {
                 Debug.Log("Hello");
                 LevelChunk newLevelChunk = new LevelChunk();
-                newLevelChunk.colorList = new List<Color>(135);
-                newLevelChunk.rectList = new List<Rect>(135);
-                newLevelChunk.presetValues = new List<int>(135);
-                newLevelChunk.spritesList = new List<Sprite>(135);
-                for (int j = 0; j < newLevelChunk.spritesList.Count; j++)
+
+                newLevelChunk.colorList = new List<Color>();
+                newLevelChunk.rectList = new List<Rect>();
+                newLevelChunk.presetValues = new List<int>();
+                newLevelChunk.spritesList = new List<Sprite>();
+                for (int j = 0; j < 135; j++)
                 {
-                    newLevelChunk.spritesList[j] = Resources.Load<Sprite>("EmptySprite");
+                    
+                    newLevelChunk.colorList.Add(Color.black);
+                    
+                    newLevelChunk.rectList.Add(new Rect(0, 0, 0, 0));
+                    
+                    newLevelChunk.presetValues.Add(0);
+                    
+                    newLevelChunk.spritesList.Add(Resources.Load<Sprite>("EmptySprite"));
                 }
-                newLevelChunk.emptySprite = default;
+                newLevelChunk.emptySprite = Resources.Load<Sprite>("EmptySprite");
                 newLevelChunk.enemySprite = Resources.Load<Sprite>("EnemySprite");
                 newLevelChunk.obstacleSprite = Resources.Load<Sprite>("ObstacleSprite");
+                newLevelChunk.selectedSprite = Resources.Load<Sprite>("EmptySprite");
+                
                 AssetDatabase.CreateAsset(newLevelChunk, "Assets/Features/Levels/Chunks/Level Chunk" + Random.Range(0,100000) +".asset");
+
+                EditorUtility.SetDirty(newLevelChunk);
+                AssetDatabase.SaveAssets();
+                AssetDatabase.Refresh();
                 levelHolder.levelChunks[i] = EditorGUI.ObjectField(levelChunkRect, newLevelChunk, typeof(LevelChunk)) as LevelChunk;
             }
             Repaint();

@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreManager : MonoBehaviour
+namespace Gameplay
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ScoreManager : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        [SerializeField] private IntVariable score;
+        [SerializeField] private FloatVariable gameSpeed;
+        private void Update()
+        {
+            score.Value = 10;
+        }
     }
 }
+

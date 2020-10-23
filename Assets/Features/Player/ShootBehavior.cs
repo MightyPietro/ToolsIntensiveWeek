@@ -31,7 +31,7 @@ namespace Gameplay
         IEnumerator WaitToShoot()
         {
             isWaiting = true;
-            yield return new WaitForSeconds(Random.Range(0.5f, 3f / gameSpeed.Value));
+            yield return new WaitForSeconds(Random.Range(0f, 1f));
             _OnEnemyShoot.Invoke();
             isWaiting = false;
         }

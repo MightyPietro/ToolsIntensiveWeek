@@ -7,11 +7,13 @@ namespace Gameplay
 {
     public class ScoreDisplayer : MonoBehaviour
     {
-        [SerializeField] private FloatVariable score;
+        [SerializeField] private IntVariable score;
         public void DisplayScore(Text scoreText)
         {
-            //scoreText.text = 00000000 + score.Value.ToString();
+            scoreText.text = 00000000 + score.Value.ToString();
         }
+
+        
         
 
     }

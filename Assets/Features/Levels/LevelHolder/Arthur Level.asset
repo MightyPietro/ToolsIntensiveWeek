@@ -10,9 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85a979f05d2eb644786318c961098d52, type: 3}
-  m_Name: New Level Holder
+  m_Name: Arthur Level
   m_EditorClassIdentifier: 
   levelChunks:
+  - {fileID: 11400000, guid: 0b39233b35570354bad4c864f152a2bc, type: 2}
+  - {fileID: 11400000, guid: 5e49b43504c7884469d60049ade43a2a, type: 2}
+  - {fileID: 11400000, guid: ec39d5f063f36e04d8f28aa3248cb185, type: 2}
+  - {fileID: 11400000, guid: ec39d5f063f36e04d8f28aa3248cb185, type: 2}
+  - {fileID: 11400000, guid: 5e49b43504c7884469d60049ade43a2a, type: 2}
+  - {fileID: 11400000, guid: 0b39233b35570354bad4c864f152a2bc, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -47,13 +53,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  gameSpeedValues: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  gameSpeedValues: 01000000020000000300000003000000020000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   keysValue:
   - 0
   - 0
@@ -104,20 +104,56 @@ MonoBehaviour:
       time: 0
       value: 0
       inSlope: 0
-      outSlope: 1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
+    - serializedVersion: 3
+      time: 0.06347399
+      value: 0.46839738
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.143054
+      value: 0.27190575
+      inSlope: 0.7927826
+      outSlope: 0.7927826
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.2225347
+      value: 0.9453007
+      inSlope: 0.7883776
+      outSlope: 0.7883776
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.2791313
+      value: 0.6910151
+      inSlope: 0.41329008
+      outSlope: 0.41329008
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.31334087
+      value: 0.0050831437
+      inSlope: 0.33058658
+      outSlope: 0.33058658
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
