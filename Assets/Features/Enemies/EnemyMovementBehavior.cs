@@ -6,7 +6,7 @@ namespace Gameplay
 {
     public class EnemyMovementBehavior : MonoBehaviour
     {
-        [SerializeField] private IntVariable gameSpeed;
+        [SerializeField] private FloatVariable gameSpeed;
         [SerializeField] private Transform _transform;
         private void OnEnable()
         { 
@@ -15,9 +15,9 @@ namespace Gameplay
         
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
-            _transform.Translate(-Vector2.right * gameSpeed.Value * .01f);
+            _transform.Translate(-Vector2.right * gameSpeed.Value * .04f);
         }
         private IEnumerator WaitToUnactive()
         {

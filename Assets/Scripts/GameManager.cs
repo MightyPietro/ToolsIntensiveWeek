@@ -7,5 +7,5 @@ public class GameManager : MonoBehaviour
     [SerializeField] private UnityEngine.Events.UnityEvent _OnReset;
     private void OnEnable() => _OnReset.Invoke();
 
-
+    
 }

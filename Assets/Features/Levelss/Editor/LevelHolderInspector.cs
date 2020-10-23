@@ -15,8 +15,15 @@ namespace Gameplay
             if (GUILayout.Button("Open Window"))
             {
                 levelHolder = target as LevelHolder;
-                levelHolder.OpenWindow();
+                SetWindow(levelHolder);
             }
+
+            
+        }
+
+        public void SetWindow(LevelHolder levelHolder)
+        {
+            LevelHolderWindow.Init(levelHolder);
         }
     }
 }

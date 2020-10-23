@@ -13,28 +13,95 @@ MonoBehaviour:
   m_Name: New Level Holder
   m_EditorClassIdentifier: 
   levelChunks:
+  - {fileID: 11400000, guid: 64bbaa630cb10fc4abc1389a8a57fa01, type: 2}
+  - {fileID: 11400000, guid: 64bbaa630cb10fc4abc1389a8a57fa01, type: 2}
+  - {fileID: 11400000, guid: 64bbaa630cb10fc4abc1389a8a57fa01, type: 2}
+  - {fileID: 11400000, guid: 64bbaa630cb10fc4abc1389a8a57fa01, type: 2}
   - {fileID: 0}
   - {fileID: 0}
-  gameSpeedValues: 0000000001000000
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  gameSpeedValues: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  keysValue: []
   changedValue: 0
   fakedLevelChunk: {fileID: 0}
   curve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: -0.5780017
-      outSlope: -0.5780017
+      time: 0.010955811
+      value: 0.026693344
+      inSlope: 0.9840881
+      outSlope: 0.9840881
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.510376
-      value: 0.70500183
-      inSlope: -0.5780017
-      outSlope: -0.5780017
+      time: 0.24610336
+      value: 0.25809926
+      inSlope: 0.9840882
+      outSlope: 0.9840882
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.74210113
+      value: 0.74620485
+      inSlope: 0.98408806
+      outSlope: 0.98408806
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.9840879
+      outSlope: 0.9840879
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334

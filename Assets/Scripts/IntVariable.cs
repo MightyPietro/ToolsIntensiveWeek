@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Gameplay
 {
-    [CreateAssetMenu(menuName = "Atom Variables/Int Variable")]
+    [CreateAssetMenu(menuName = "Atom Variables/Float Variable")]
     public class IntVariable : ScriptableObject
     {
         public int Value;
@@ -17,8 +17,6 @@ namespace Gameplay
         public void DivideToValue(int value) { Value /= value; RaiseEvent(); }
 
         public void RaiseEvent() { if (Event != null) Event.Raise(); }
-
     }
 }
-
 

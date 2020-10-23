@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: -1203026761263340900}
-  gameSpeed: {fileID: 11400000, guid: 63aaef52352c74047979703ebc7a4e91, type: 2}
+  gameSpeed: {fileID: 11400000, guid: b0b5c373253719141adb1ad54f0aa853, type: 2}
   emitterType: 0
   isProjectileFromPlayer: 0
 --- !u!114 &-6086786294905926543

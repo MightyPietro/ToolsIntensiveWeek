@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 425a3da7bc12f754b9d6c767c3a595b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSpeed: {fileID: 11400000, guid: 63aaef52352c74047979703ebc7a4e91, type: 2}
+  gameSpeed: {fileID: 11400000, guid: b0b5c373253719141adb1ad54f0aa853, type: 2}
   _transform: {fileID: 7238095710413629727}
 --- !u!114 &1121687071418513616
 MonoBehaviour:
@@ -276,7 +276,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   positionShootStart: {fileID: 1103472912113804542}
-  gameSpeed: {fileID: 11400000, guid: 63aaef52352c74047979703ebc7a4e91, type: 2}
+  gameSpeed: {fileID: 11400000, guid: b0b5c373253719141adb1ad54f0aa853, type: 2}
   projectilePool: {fileID: 11400000, guid: 8bfad71e2efa8cf4cb6cf1fd0c998bee, type: 2}
 --- !u!61 &5091561954209678428
 BoxCollider2D:
@@ -291,7 +291,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.93522644}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -302,5 +302,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3, y: 1.6}
+  m_Size: {x: 2.3, y: 29.437754}
   m_EdgeRadius: 0

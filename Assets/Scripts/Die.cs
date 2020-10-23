@@ -16,7 +16,11 @@ namespace Gameplay
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.CompareTag("Obstacles")) _OnDie.Invoke();
+            if (gameObject.CompareTag("Player") )
+            {
+                if (collision.CompareTag("Obstacles")) _OnDie.Invoke();
+            }
+
         }
     }
 }

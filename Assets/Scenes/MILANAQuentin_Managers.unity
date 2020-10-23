@@ -167,15 +167,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 63aaef52352c74047979703ebc7a4e91, type: 2}
-        m_TargetAssemblyTypeName: Gameplay.IntVariable, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: b0b5c373253719141adb1ad54f0aa853, type: 2}
+        m_TargetAssemblyTypeName: Gameplay.FloatVariable, Assembly-CSharp
         m_MethodName: SetValue
-        m_Mode: 3
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
-          m_FloatArgument: 0
+          m_FloatArgument: 1
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -293,6 +293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111372409}
   - component: {fileID: 2111372408}
+  - component: {fileID: 2111372410}
   m_Layer: 0
   m_Name: Chunk Manager
   m_TagString: Untagged
@@ -314,6 +315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelHolder: {fileID: 11400000, guid: ef372a7d5e739d445acd2034abefaafa, type: 2}
   enemiesPool: {fileID: 11400000, guid: 70e916ad930f20a438ed99dc10b4b995, type: 2}
+  gameSpeed: {fileID: 11400000, guid: b0b5c373253719141adb1ad54f0aa853, type: 2}
 --- !u!4 &2111372409
 Transform:
   m_ObjectHideFlags: 0
@@ -328,3 +330,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2111372410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111372407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5848be073d43c834dac1fa6bdeefc989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: d481937a177234c4fa8b8f611445772b, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2111372408}
+        m_TargetAssemblyTypeName: Gameplay.ChunkManager, Assembly-CSharp
+        m_MethodName: ChangeGameSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -9,8 +9,10 @@ namespace Gameplay
     {
         public LevelChunk[] levelChunks;
         public int[] gameSpeedValues;
+        public float[] keysValue;
         public int changedValue;
         public List<Keyframe> keysList = new List<Keyframe>();
+
 
 
         [HideInInspector]
@@ -20,10 +22,7 @@ namespace Gameplay
         public GUIStyle chunkStyle;
         public GUIStyle gameSpeedStyle;
 
-        public void OpenWindow()
-        {
-            LevelHolderWindow.Init(this);
-        }
+        
     }
 }
 

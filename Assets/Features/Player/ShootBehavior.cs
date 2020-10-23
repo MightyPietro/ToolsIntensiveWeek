@@ -11,7 +11,7 @@ namespace Gameplay
         [SerializeField] private UnityEngine.Events.UnityEvent _OnMouseClick;
         [SerializeField] private UnityEngine.Events.UnityEvent _OnEnemyShoot;
         [SerializeField] private Transform positionShootStart;
-        [SerializeField] IntVariable gameSpeed;
+        [SerializeField] FloatVariable gameSpeed;
         public Pools projectilePool;
 
         private void OnEnable() => isWaiting = false;

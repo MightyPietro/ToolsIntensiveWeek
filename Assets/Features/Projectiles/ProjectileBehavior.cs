@@ -8,7 +8,7 @@ namespace Gameplay
     public class ProjectileBehavior : MonoBehaviour
     {
         [SerializeField] private Rigidbody2D rb;
-        [SerializeField] private IntVariable gameSpeed;
+        [SerializeField] private FloatVariable gameSpeed;
 
         public enum EmitterType { player,enemy}
 
@@ -27,7 +27,7 @@ namespace Gameplay
 
         private IEnumerator WaitToUnactive()
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
             if (gameObject.activeSelf) gameObject.SetActive(false);
         }
 
@@ -55,7 +55,7 @@ namespace Gameplay
 
                 }
 
-            }else
+            }else if (collision.CompareTag("Obstacles"))
             {
                 gameObject.GetComponent<IKillable>().Die();
             }
